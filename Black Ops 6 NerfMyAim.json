@@ -1,0 +1,175 @@
+{
+  "Title": "Black Ops 6 NerfMyAim",
+  "ImageUrl": "https://imagedelivery.net/HL_Fwm__tlvUGLZF2p74xw/ee764603-d8ad-4f17-7ea0-68cbef824300/public",
+  "CustomCurve": [
+    {
+      "X": 0,
+      "Y": 200
+    },
+    {
+      "X": 84,
+      "Y": 109
+    },
+    {
+      "X": 187,
+      "Y": 43
+    },
+    {
+      "X": 300,
+      "Y": 0
+    }
+  ],
+  "HorizontalSensitivity": 200,
+  "VerticalSensitivity": 300,
+  "Deadzone": 230,
+  "DeadzoneMin": 0,
+  "MouseFilterChecked": false,
+  "EnableTray": false,
+  "EnableNotifications": true,
+  "EnableCustomCurve": true,
+  "InputBlocker": true,
+  "KeyTriggerMappings": {
+    "RightTrigger": [
+      "LeftButton"
+    ],
+    "LeftTrigger": [
+      "RightButton"
+    ]
+  },
+  "KeyMappings": {
+    "A": [
+      "Space"
+    ],
+    "X": [
+      "F"
+    ],
+    "Y": [
+      "G",
+      "One",
+      "Two",
+      "ScrollUp",
+      "ScrollDown"
+    ],
+    "B": [
+      "C"
+    ],
+    "RightShoulder": [
+      "E",
+      "X"
+    ],
+    "RightThumb": [
+      "V"
+    ],
+    "LeftShoulder": [
+      "Q",
+      "X"
+    ],
+    "LeftThumb": [
+      "LeftShift"
+    ],
+    "Start": [
+      "Escape"
+    ],
+    "Back": [
+      "Tab"
+    ]
+  },
+  "KeyDirectionMappings": {
+    "Up": [
+      "MiddleButton"
+    ],
+    "Down": [
+      "Four"
+    ],
+    "Left": [
+      "B"
+    ],
+    "Right": [
+      "Three"
+    ]
+  },
+  "KeyFunctionsMappings": {
+    "EnableDisable": [
+      "F1"
+    ]
+  },
+  "KeyL3Mappings": {
+    "LUp": [
+      "W"
+    ],
+    "LLeft": [
+      "A"
+    ],
+    "LRight": [
+      "D"
+    ],
+    "LDown": [
+      "S"
+    ]
+  },
+  "KeyR3Mappings": {
+    "RUp": [
+      "Up"
+    ],
+    "RLeft": [
+      "Numpad4"
+    ],
+    "RRight": [
+      "Numpad6"
+    ],
+    "RDown": [
+      "Down"
+    ]
+  },
+  "Macros": [
+    {
+      "Name": "SILENT_AIM",
+      "Key": "F1",
+      "Script": "LOOP(SILENT) IF(R3_Y_CLEAR,TRUE) SET(JRY,-1800) WAIT(10) IF(R3_Y_CLEAR,TRUE) SET(JRY,1800) WAIT(10)",
+      "IsEnabled": true,
+      "isHidden": false
+    },
+    {
+      "Name": "AUTO_PING",
+      "Key": "LeftButton",
+      "Script": "LOOP(AUTOPING) DOWN(UP) WAIT(100) UP(UP) WAIT(1000) / !LOOP(AUTOPING)",
+      "IsEnabled": true,
+      "isHidden": false
+    },
+    {
+      "Name": "PARACHUTE",
+      "Key": "Alt",
+      "Script": "MULTIPLIER(100) HIGH_SENSE(TRUE) / HIGH_SENSE(FALSE)",
+      "IsEnabled": true,
+      "isHidden": false
+    },
+    {
+      "Name": "AUTO_PRESS_R",
+      "Key": "R",
+      "Script": "DOWN(X) / DOWN(X) WAIT(400) UP(X)",
+      "IsEnabled": true,
+      "isHidden": false
+    },
+    {
+      "Name": "AUTO_PRESS_Four",
+      "Key": "Four",
+      "Script": "DOWN(Y) / DOWN(Y) WAIT(400) UP(Y)",
+      "IsEnabled": true,
+      "isHidden": false
+    },
+    {
+      "Name": "AUTO_PRESS_Control",
+      "Key": "Control",
+      "Script": "DOWN(B) / DOWN(B) WAIT(400) UP(B)",
+      "IsEnabled": true,
+      "isHidden": false
+    },
+    {
+      "Name": "ANTI_RECOIL",
+      "Key": "LeftButton",
+      "Script": "ANTI_RECOIL(20)",
+      "IsEnabled": true,
+      "isHidden": false
+    }
+  ]
+}
